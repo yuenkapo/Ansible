@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: {{ inventory_hostname }}
+  hosts: all
   vars:
     cli:
       username: admin
@@ -10,4 +10,4 @@
     - name: run show version on remote devices
       iosxr_command:
         commands: show version
-        provider: {{ cli }}
+        provider: "{{ cli }}"
