@@ -1,5 +1,6 @@
 # Note: examples below use the following provider dict to handle
 #       transport and authentication to the node.
+-name: cisco
 vars:
   cli:
     host: "{{ inventory_hostname }}"
