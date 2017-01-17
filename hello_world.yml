@@ -1,7 +1,13 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+- name: cisco
+  host: all
+  vars:
+    cli:
+      username: admin
+      password: M@croview1
+      transport: cli
 
+  tasks:
+    - name: run show version on remote devices
+      ios_command:
+       commands: show version
+       provider: "{{ cli }}"
