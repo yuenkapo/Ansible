@@ -7,7 +7,8 @@
       transport: cli
   
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: run show version on remote devices
+    iosxr_command:
+      commands: show version
+      provider: "{{ cli }}"
 
