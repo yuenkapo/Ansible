@@ -3,8 +3,8 @@
 vars:
   cli:
     host: "{{ inventory_hostname }}"
-    username: cisco
-    password: cisco
+    username: admin
+    password: M@croview1
     transport: cli
 
 tasks:
