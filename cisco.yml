@@ -8,6 +8,6 @@
   
   tasks:
     - name: run show version on remote devices
-      iosxr_command:
+      ios_command:
         commands: show version
         provider: "{{ cli }}"
