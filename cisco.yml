@@ -2,7 +2,7 @@
   hosts: all
   gather_facts: False
   connection: local
-  
+
   vars:
     cli:
       host: "{{ inventory_hostname }}"
@@ -13,5 +13,6 @@
   tasks:
     - name: run show version on remote devices
       ios_command:
-        commands: show version
+        commands:
+          - show version
         provider: "{{ cli }}"
