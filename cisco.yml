@@ -2,10 +2,7 @@
   hosts: all
   gather_facts: False
   connection: local
-  inventory = /etc/ansible/hosts
   
-
-
   vars:
     cli:
       host: "{{ inventory_hostname }}"
