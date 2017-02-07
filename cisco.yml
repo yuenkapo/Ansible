@@ -5,7 +5,7 @@
 
   vars:
     cli:
-    host: "{{ inventory_hostname }}"
+      host: "{{ inventory_hostname }}"
       username: admin
       password: M@croview1
       transport: cli
