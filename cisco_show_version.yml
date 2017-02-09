@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: cisco_show_version
   hosts: all
   gather_facts: False
   connection: local
