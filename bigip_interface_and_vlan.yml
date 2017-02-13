@@ -1,0 +1,16 @@
+## Playbook for Collect interface and vlan on F5 (Prepared by Frankie Cheung)
+
+---
+# file test.yml
+# ...
+- hosts: f5
+  connection: local
+  tasks:
+  - name: Collect BIG-IP facts
+    bigip_facts:
+        server: "172.31.11.104"
+        user: "admin"
+        password: "admin"
+        include: "interface,vlan"
+        validate_certs: "false"
+    delegate_to: localhost
