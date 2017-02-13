@@ -1,0 +1,24 @@
+## Playbook for manage BIG-IP hostname on F5 (Prepared by Frankie Cheung)
+
+---
+# file bigip_manage_hostname.yml
+# ...
+- name: Manage BIG-IP hostnames
+  hosts: f5
+  connection: local
+  tasks:
+  - name: Create Self IP
+    bigip_selfip:
+      address: "172.31.11.106"
+      allow_service: 
+        - "default"
+      name: "self_ansible2"
+      netmask: "255.255.255.0"
+      password: "admin"
+      server: "172.31.11.104"
+      user: "admin"
+      validate_certs: "False"
+      vlan: "internal"
+    delegate_to: localhost
+  
+  
