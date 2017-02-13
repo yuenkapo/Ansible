@@ -1,0 +1,17 @@
+## Playbook for Collect info on F5 (Prepared by Frankie Cheung)
+
+---
+# file f5_bigip_fact.yml
+# ...
+- hosts: f5
+  connection: local
+  tasks:
+  - name: Get all of the facts from my BIG-IP
+    bigip_facts:
+        server: "{{ inventory_hostname }}"
+        user: "admin"
+        password: "admin"
+        include: "system_info"
+        validate_certs: "false"
+    delegate_to: localhost
+
