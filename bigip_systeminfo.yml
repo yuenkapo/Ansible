@@ -3,7 +3,7 @@
 ---
 # file f5_bigip_fact.yml
 # ...
-- hosts: "{{ inventory_hostname }}"
+- hosts: all
   connection: local
   tasks:
   - name: Get all of the facts from my BIG-IP
