@@ -16,5 +16,5 @@
         commands:
           - show version
       register: ps
-          - debug: var=ps
+    - debug: var=ps
         provider: "{{ cli }}"
