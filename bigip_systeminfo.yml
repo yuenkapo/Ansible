@@ -17,4 +17,4 @@
     delegate_to: localhost
     
   - name: "Debug result"
-    debug: var=kp.stdout
+    debug: var=kp
