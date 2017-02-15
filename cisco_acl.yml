@@ -27,4 +27,4 @@
       register: kp
       
     - name: "Debug result"
-    debug: var=kp
+      debug: var=kp
