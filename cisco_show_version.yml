@@ -16,3 +16,8 @@
         commands:
           - show version
         provider: "{{ cli }}"
+      register: zlib_version    
+    
+    - name: "Debug result"
+      debug: var=zlib_version.stdout    
+        
