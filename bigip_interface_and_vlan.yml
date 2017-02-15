@@ -8,9 +8,13 @@
   tasks:
   - name: Collect BIG-IP facts
     bigip_facts:
-        server: "172.31.11.72"
-        user: "admin"
-        password: "admin"
-        include: "interface,vlan"
-        validate_certs: "false"
+      server: "172.31.11.72"
+      user: "admin"
+      password: "admin"
+      include: "interface,vlan"
+      validate_certs: "false"
+    register: kp
     delegate_to: localhost
+    
+  - name: "Debug result"
+    debug: var=kp.stdout
