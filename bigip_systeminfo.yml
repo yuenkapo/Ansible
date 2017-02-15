@@ -13,8 +13,8 @@
         password: "admin"
         include: "system_info"
         validate_certs: "false"
-    delegate_to: localhost
     register: kp
-
+    delegate_to: localhost
+    
   - name: "Debug result"
     debug: var=kp.stdout
