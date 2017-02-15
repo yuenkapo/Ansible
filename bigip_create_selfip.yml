@@ -4,7 +4,7 @@
 # file bigip_manage_hostname.yml
 # ...
 - name: Manage BIG-IP hostnames
-  hosts: f5
+  hosts: all
   connection: local
   tasks:
   - name: Create Self IP
