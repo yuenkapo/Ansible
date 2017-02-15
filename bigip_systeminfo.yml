@@ -8,11 +8,11 @@
   tasks:
   - name: Get all of the facts from my BIG-IP
     bigip_facts:
-        server: "{{ inventory_hostname }}"
-        user: "admin"
-        password: "admin"
-        include: "system_info"
-        validate_certs: "false"
+      server: "{{ inventory_hostname }}"
+      user: "admin"
+      password: "admin"
+      include: "system_info"
+      validate_certs: "false"
     register: kp
     delegate_to: localhost
     
