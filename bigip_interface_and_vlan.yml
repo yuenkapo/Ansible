@@ -3,12 +3,12 @@
 ---
 # file test.yml
 # ...
-- hosts: f5
+- hosts: all
   connection: local
   tasks:
   - name: Collect BIG-IP facts
     bigip_facts:
-        server: "172.31.11.104"
+        server: "172.31.11.72"
         user: "admin"
         password: "admin"
         include: "interface,vlan"
