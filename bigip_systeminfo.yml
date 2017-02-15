@@ -14,4 +14,7 @@
         include: "system_info"
         validate_certs: "false"
     delegate_to: localhost
+    register: kp
 
+  - name: "Debug result"
+      debug: var=kp.stdout
