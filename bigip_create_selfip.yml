@@ -9,7 +9,7 @@
   tasks:
   - name: Create Self IP
     bigip_selfip:
-      address: "172.31.11.73"
+      address: "10.1.30.1"
       allow_service: 
         - "default"
       name: "self_ansible2"
