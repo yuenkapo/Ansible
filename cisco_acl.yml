@@ -24,3 +24,7 @@
         before: no ip access-list extended test
         match: exact
         provider: "{{ cli }}"
+      register: kp
+      
+    - name: "Debug result"
+    debug: var=kp
