@@ -15,6 +15,6 @@
       ios_command:
         commands:
           - show version
-              register: ps
+      register: ps
           - debug: var=ps
         provider: "{{ cli }}"
