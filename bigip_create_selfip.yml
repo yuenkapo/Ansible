@@ -19,6 +19,10 @@
       user: "admin"
       validate_certs: "False"
       vlan: "internal"
+    register: kp
     delegate_to: localhost
+    
+  - name: "Debug result"
+    debug: var=kp
   
   
