@@ -9,13 +9,13 @@
   tasks:
   - name: Create Self IP
     bigip_selfip:
-      address: "172.31.11.106"
+      address: "172.31.11.73"
       allow_service: 
         - "default"
       name: "self_ansible2"
       netmask: "255.255.255.0"
       password: "admin"
-      server: "172.31.11.104"
+      server: "172.31.11.72"
       user: "admin"
       validate_certs: "False"
       vlan: "internal"
