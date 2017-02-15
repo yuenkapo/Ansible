@@ -19,5 +19,5 @@
       register: kp    
     
     - name: "Debug result"
-      debug: var=kp.stdout    
+      debug: var=kp   
         
