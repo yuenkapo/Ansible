@@ -15,7 +15,7 @@
       name: "self_ansible2"
       netmask: "255.255.255.0"
       password: "admin"
-      server: "172.31.11.72"
+      server: "{{ inventory_hostname }}"
       user: "admin"
       validate_certs: "False"
       vlan: "internal"
