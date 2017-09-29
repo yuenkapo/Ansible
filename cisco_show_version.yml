@@ -16,7 +16,8 @@
         commands:
           - show version
         provider: "{{ cli }}"
-      register: kp    
+      register: kp
+      delegate_to: localhost
     
     - name: "Debug result"
       debug: var=kp   
