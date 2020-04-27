@@ -1,4 +1,4 @@
-## Playbook for manage BIG-IP hostname on F5 (Prepared by Frankie Cheung)
+## Playbook for manage BIG-IP hostname on F5
 
 ---
 # file bigip_manage_hostname.yml
